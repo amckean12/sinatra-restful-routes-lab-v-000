@@ -5,3 +5,9 @@ Ingredients: <%= recipe.ingredients %>
 Cook Time: <%= recipe.cook_time %>
 <br></br>
 <% end %>
+
+<form method="post" action="/recipes/new">
+    <input id="hidden" type="hidden" name="_method" value="create">
+
+  <input type="submit" value="Create New Recipe">
+</form>
